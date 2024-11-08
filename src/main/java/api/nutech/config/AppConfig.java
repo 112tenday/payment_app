@@ -27,6 +27,7 @@ public class AppConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/membership/profile").permitAll()
                 .antMatchers("/membership/profile/update").permitAll()
                 .antMatchers("/membership/profile/image").permitAll()
+                .antMatchers("/information/banner").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class)

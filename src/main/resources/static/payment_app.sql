@@ -11,9 +11,9 @@ CREATE TABLE users (
 
 CREATE TABLE banners (
     id UUID PRIMARY KEY,
-    title VARCHAR(100) NOT NULL,
-    image_url VARCHAR(255),
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    banner_name VARCHAR(255) NOT NULL,
+    banner_image VARCHAR(255) NOT NULL,
+    description TEXT
 );
 
 CREATE TABLE services (

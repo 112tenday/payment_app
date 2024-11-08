@@ -15,9 +15,7 @@ public class Banner {
     @Id
     @GeneratedValue
     private UUID id;
-
-    private String title;
-    private String imageUrl;
-    private LocalDateTime createdAt;
-
+    private String bannerName;
+    private String bannerImage;
+    private String description;
 }
